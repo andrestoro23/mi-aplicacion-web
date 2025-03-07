@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        body {
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        .dark-mode main p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="blue darken-3 white-text center-align">
+        <h1>Bienvenido a la Aplicación</h1>
+        <nav class="blue darken-4">
+            <div class="nav-wrapper container">
+                <ul id="nav-mobile" class="right">
+                    <li><a href="index.html" class="white-text">Inicio</a></li>
+                    <li><a href="login.html" class="white-text">Ingresar</a></li>
+                    <li><a href="dashboard.html" class="white-text">Dashboard</a></li>
+                    <li><button id="toggleMode" class="btn grey darken-3 btn-custom">🌙 Modo Oscuro</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <p id="welcomeMessage">Esta es la página de inicio. Selecciona una opción del menú.</p>
+    </main>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleMode = document.getElementById("toggleMode");
+            toggleMode.addEventListener("click", function () {
+                document.body.classList.toggle("dark-mode");
+                toggleMode.textContent = document.body.classList.contains("dark-mode") ? "☀️ Modo Claro" : "🌙 Modo Oscuro";
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
