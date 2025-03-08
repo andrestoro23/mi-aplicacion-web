@@ -52,3 +52,14 @@ Material Design
 
 =======
 >>>>>>> 037950a (🚀 Agregada integración con API pública de usuario aleatorio en dashboard.html)
+
+## 🔍 Mapa de Navegación Visual  
+```mermaid  
+graph TD;
+    A[Inicio] --> B[Login];
+    B -->|Acceso correcto| C[Dashboard];
+    B -->|Error| B;
+    C --> D[Cambio de contraseña];
+    D --> C;
+    C -->|Cerrar sesión| A;
+
