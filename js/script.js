@@ -104,3 +104,16 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error("Error al obtener datos:", error));
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("https://randomuser.me/api/")
+        .then(response => response.json())
+        .then(data => {
+            let user = data.results[0];
+
+            // Insertar los datos en el HTML
+            document.getElementById("user-photo").src = user.picture.medium;
+            document.getElementById("user-name").textContent = `${user.name.first} ${user.name.last}`;
+            document.getElementById("user-email").textContent = user.email;
+        })
+        .catch(error => console.error("Error al obtener usuario:", error));
+});

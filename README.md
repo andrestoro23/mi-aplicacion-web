@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 Mi Aplicación Web
 Esta es una aplicación web desarrollada con HTML5, CSS y JavaScript, siguiendo los principios de usabilidad y accesibilidad de Material Design.
 Mapa de Navegación
+=======
+# 📌 Mi Aplicación Web
+
+Esta es una aplicación web desarrollada con **HTML5, CSS y JavaScript**, siguiendo los principios de usabilidad y accesibilidad de **Material Design**.
+
+---
+
+## 🚀 Mapa de Navegación
+
+```plaintext
+>>>>>>> 037950a (🚀 Agregada integración con API pública de usuario aleatorio en dashboard.html)
 [Pantalla de Inicio] (index.html)
        │
        ├──▶ [Login] (login.html)
@@ -13,6 +25,7 @@ Mapa de Navegación
        │
        ├──▶ [Cambio de contraseña] (change-password.html)
                ├──▶ (🔗 Volver al Dashboard)
+<<<<<<< HEAD
 Instalación y Uso
 Clonar el Repositorio
 Si deseas obtener una copia local del proyecto, ejecuta el siguiente comando en tu terminal o Git Bash:
@@ -37,3 +50,5 @@ Material Design
 │── change-password.html  # Página para cambiar contraseña
 │── README.md        # Documentación del proyecto
 
+=======
+>>>>>>> 037950a (🚀 Agregada integración con API pública de usuario aleatorio en dashboard.html)
